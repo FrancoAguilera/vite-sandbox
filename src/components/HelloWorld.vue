@@ -1,15 +1,26 @@
 <script setup lang="ts">
-defineProps<{ msg: string }>()
+  defineProps<{ msg: string }>()
 </script>
 
 <template>
   <div class="text-center">
-    <button type="button" class="btn btn-success">Success</button>
+    <button class="btn btn-danger">test registry</button>
+  </div>
+  <br>
+  <div class="text-center">
+    <button type="button" class="my-btn">Success</button>
   </div>
 </template>
 
-<style scoped>
-.unused-class {
-  color: #888;
+<style>
+
+.my-class {
+  color: red;
+  background: pink;
 }
+
+.my-btn {
+  @extend .my-class;
+}
+
 </style>
